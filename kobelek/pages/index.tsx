@@ -1,8 +1,9 @@
 import Head from "next/head";
-// import styles from "@/styles/Home.module.css";
-// import fonts from "../styles/fonts.css";
 import Header from "../components/Header";
 import HeaderIcons from "@/components/HeaderIcons";
+import AboutFund from "@/components/AboutFund";
+import HelpButton from "@/components/HelpButton";
+import Children from "@/components/Children";
 
 export default function Home() {
     return (
@@ -23,22 +24,19 @@ export default function Home() {
                 <header>
                     <Header />
                     <div className="bg-[#4a96fb] rounded-[30px] mt-4 p-[80px] text-white">
-                        <div className="text-[25px] pb-[40px]">
-                            Помогаем детям
+                        <div className="text-[25px] pb-[80px]">
+                            Первый в Казахстане Фонд помощи детям с редким
+                            генетическим заболеванием Буллёзный Эпидермолиз.
                         </div>
-                        <div className="text-[80px]">
-                            Помогаем детям по всему Казахстану
+                        <div className="text-[80px] leading-none">
+                            Дети бабочки Благотворительный фонд
                         </div>
                     </div>
                     <HeaderIcons />
                 </header>
-                <div className="pt-[100px]">
-                    <div className="text-[50px] pb-2">About Fund</div>
-                    <div className="text-[22px]">
-                        This fund is for butterfly sickness children
-                    </div>
-                    <div>Our mission and goal</div>
-                </div>
+                <AboutFund />
+                <HelpButton />
+                <Children />
             </div>
         </>
     );

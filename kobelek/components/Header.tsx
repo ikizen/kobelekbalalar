@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// let tel = process.env.local.TEL_NUMBER;
+const number = process.env.TEL_NUMBER;
 const enum Tel {
-    Phone = "+77026351323",
+    Phone = number,
     Whatsapp = `https://wa.me/${Phone}`,
 }
 
