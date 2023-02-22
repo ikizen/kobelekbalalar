@@ -1,5 +1,8 @@
 import Head from "next/head";
-import styles from "@/styles/Home.module.css";
+// import styles from "@/styles/Home.module.css";
+// import fonts from "../styles/fonts.css";
+import Header from "../components/Header";
+import HeaderIcons from "@/components/HeaderIcons";
 
 export default function Home() {
     return (
@@ -16,9 +19,27 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main>
-                <div>Kobelek balalar</div>
-            </main>
+            <div className="min-h-screen">
+                <header>
+                    <Header />
+                    <div className="bg-[#4a96fb] rounded-[30px] mt-4 p-[80px] text-white">
+                        <div className="text-[25px] pb-[40px]">
+                            Помогаем детям
+                        </div>
+                        <div className="text-[80px]">
+                            Помогаем детям по всему Казахстану
+                        </div>
+                    </div>
+                    <HeaderIcons />
+                </header>
+                <div className="pt-[100px]">
+                    <div className="text-[50px] pb-2">About Fund</div>
+                    <div className="text-[22px]">
+                        This fund is for butterfly sickness children
+                    </div>
+                    <div>Our mission and goal</div>
+                </div>
+            </div>
         </>
     );
 }

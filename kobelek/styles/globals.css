@@ -1,1 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@font-face {
+    font-family: "Circe Regular";
+    src: url("../public/fonts/Circe-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@layer components {
+    .btn-nav {
+        @apply flex justify-center items-center text-[16px] mx-2 py-2 px-4 hover:bg-[#4a96fb] rounded-md;
+    }
+    .btn {
+        @apply py-[1rem] px-[2rem];
+    }
+    .main {
+        @apply mx-10;
+    }
+}
+
+body {
+    padding: 0 300px;
+    font-family: "Circe Regular";
+}
