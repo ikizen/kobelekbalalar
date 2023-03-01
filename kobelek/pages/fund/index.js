@@ -1,5 +1,5 @@
-import AboutFund from "/components/AboutFund.tsx";
-import Header from "/components/Header.tsx";
+import AboutFund from "/components/AboutFund.jsx";
+import Header from "/components/Header.jsx";
 import Footer from "/components/Footer.jsx";
 function Fund() {
     return (
