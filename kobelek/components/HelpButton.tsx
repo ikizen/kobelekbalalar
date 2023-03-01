@@ -1,7 +1,8 @@
 import Link from "next/link";
 function HelpButton() {
-    const whatsappText = `https://wa.me/${process.env.TEL_NUMBER}?text=`;
-    const text = "I'm%20interested%20in%20your%20car%20for%20sale";
+    const tel = "+77026351323";
+    // const whatsappText = `https://wa.me/${tel}?text=`;
+    // const text = "I'm%20interested%20in%20your%20car%20for%20sale";
     const helpInfo = [
         {
             title: "Оказать помощь детям бабочкам",
@@ -44,7 +45,7 @@ function HelpButton() {
                         <div className="h-[100px]"></div>
                         <button className="absolute bottom-0 text-sm text-black bg-white gap-4 rounded-full p-4">
                             <Link
-                                href={`https://wa.me/${process.env.TEL_NUMBER}?text=${info.whatsapp}`}
+                                href={`https://wa.me/${tel}?text=${info.whatsapp}`}
                             >
                                 {info.button}
                             </Link>
