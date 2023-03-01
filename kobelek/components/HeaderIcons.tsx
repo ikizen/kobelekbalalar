@@ -20,7 +20,7 @@ const icons = [
 function HeaderIcons() {
     return (
         <>
-            <div className="pt-8">
+            <div className="py-8">
                 <div className="flex flex-row justify-between">
                     {icons.map((icon) => (
                         <div

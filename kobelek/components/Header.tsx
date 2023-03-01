@@ -18,8 +18,8 @@ const navbars = [
 function Header() {
     return (
         <>
-            <div className="flex flex-row min-w-full justify-between pt-4">
-                <Image src="/logo.png" alt="logo" height={62} width={164} />
+            <div className="flex flex-row min-w-full justify-between py-4">
+                <Image src="/logo3.png" alt="logo" height={62} width={100} />
                 <div className="flex flex-row text-black">
                     {navbars.map((nav) => (
                         <button className="btn-nav" key={nav.name}>
@@ -27,9 +27,6 @@ function Header() {
                         </button>
                     ))}
                 </div>
-                {/* <button className="px-4 py-2 bg-[#F6A21E]">
-                    <Link href={Tel.Whatsapp}>Помочь</Link>
-                </button> */}
             </div>
         </>
     );

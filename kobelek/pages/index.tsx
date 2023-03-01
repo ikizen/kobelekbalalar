@@ -4,6 +4,9 @@ import HeaderIcons from "@/components/HeaderIcons";
 import AboutFund from "@/components/AboutFund";
 import HelpButton from "@/components/HelpButton";
 import Children from "@/components/Children";
+import Footer from "../components/Footer";
+import Statistics from "../components/Statistics";
+import HeaderCard from "../components/HeaderCard";
 
 export default function Home() {
     return (
@@ -20,24 +23,18 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="min-h-screen">
+            <div className="min-h-screen px-[300px]">
                 <header>
                     <Header />
-                    <div className="bg-[#4a96fb] rounded-[30px] mt-4 p-[80px] text-white">
-                        <div className="text-[25px] pb-[80px]">
-                            Первый в Казахстане Фонд помощи детям с редким
-                            генетическим заболеванием Буллёзный Эпидермолиз.
-                        </div>
-                        <div className="text-[80px] leading-none">
-                            Дети бабочки Благотворительный фонд
-                        </div>
-                    </div>
+                    <HeaderCard />
                     <HeaderIcons />
                 </header>
                 <AboutFund />
+                <Statistics />
                 <HelpButton />
                 <Children />
             </div>
+            <Footer />
         </>
     );
 }

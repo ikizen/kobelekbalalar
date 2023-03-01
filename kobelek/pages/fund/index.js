@@ -1,8 +1,14 @@
+import AboutFund from "/components/AboutFund.tsx";
+import Header from "/components/Header.tsx";
+import Footer from "/components/Footer.jsx";
 function Fund() {
     return (
         <>
-            <div>Fund</div>
-            <div>Fund</div>
+            <div className="px-[300px]">
+                <Header />
+                <AboutFund />
+            </div>
+            <Footer />
         </>
     );
 }
