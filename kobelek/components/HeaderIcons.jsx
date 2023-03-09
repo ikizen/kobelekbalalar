@@ -2,26 +2,26 @@ import Image from "next/image";
 const icons = [
     {
         name: "Тесное сотрудничество с мед. учреждениями",
-        link: "./img/1.svg",
+        link: "/img/1.png",
     },
     {
         name: "Поддержка предпринимателей Казахстана",
-        link: "./img/3.svg",
+        link: "/img/3.png",
     },
     {
         name: "Семинары и обучение врачей",
-        link: "./img/2.svg",
+        link: "/img/2.png",
     },
     {
         name: "Моральная и психологическая поддержка",
-        link: "./img/4.svg",
+        link: "/img/4.png",
     },
 ];
 function HeaderIcons() {
     return (
         <>
-            <div className="py-8">
-                <div className="flex flex-row justify-between">
+            <div className="md:py-8">
+                <div className="flex md:flex-row flex-col justify-between">
                     {icons.map((icon) => (
                         <div
                             className="flex flex-row items-end"

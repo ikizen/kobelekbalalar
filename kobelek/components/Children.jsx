@@ -1,7 +1,8 @@
 // import Image from "next/image";
-import { Card, CardHeader, CardBody, CardFooter } from "@chakra-ui/react";
+import { Card, CardHeader, CardBody, CardFooter, Flex } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
+
 function Children() {
     const children = [
         {
@@ -43,24 +44,31 @@ function Children() {
                     <Card
                         // boxShadow="dark-lg"
                         key={child.name}
-                        width="380px"
+                        width="370px"
                         height="540px"
                         rounded="30px"
-                        border="4px"
-                        borderColor="#395466"
+                        background="#e89361"
                     >
                         <CardBody>
-                            <Image
-                                src={child.img}
-                                alt={child.name}
-                                rounded="30px"
-                            />
-                            <Text className="pt-4 text-[22px]">
-                                {child.name}
-                            </Text>
-                            <Text className="py-2 text-[16px]">
-                                {child.text}
-                            </Text>
+                            <Flex
+                                justify="center"
+                                direction="column"
+                                align="center"
+                            >
+                                <Image
+                                    src={child.img}
+                                    alt={child.name}
+                                    rounded="full"
+                                    width="220px"
+                                    height="220px"
+                                />
+                                <Text className="pt-4 text-[28px] font-bold text-white">
+                                    {child.name}
+                                </Text>
+                                <Text className="py-4 text-[18px] text-center text-white">
+                                    {child.text}
+                                </Text>
+                            </Flex>
                         </CardBody>
                     </Card>
                     // <div

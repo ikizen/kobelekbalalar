@@ -23,7 +23,7 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="min-h-screen px-[300px]">
+            <div className="min-h-screen px-[15px] xl:px-[300px]">
                 <header>
                     <Header />
                     <HeaderCard />

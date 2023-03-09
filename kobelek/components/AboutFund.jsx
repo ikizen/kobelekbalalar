@@ -15,16 +15,18 @@ const goals = [
 function AboutFund() {
     return (
         <>
-            <div className="py-[50px]">
-                <div className="text-[50px] pb-2">О фонде Kóbelek balalar</div>
-                <div className="text-[22px] w-1/2d">
+            <div className="md:py-[50px]">
+                <div className="lg:text-[64px] font-bold pb-2">
+                    О фонде Kóbelek balalar
+                </div>
+                <div className="lg:text-[36px] font-normal lg:pr-[280px]">
                     Помощь детям с редким генетическим заболеванием мы начали 3
                     августа 2017 года при поддержке «Казахстанской Ассоциации
                     дерматовенерологов, дерматокосметологов».
                 </div>
-                <div className="flex flex-row pt-8">
+                <div className="flex flex-col md:flex-row pt-14 gap-[100px]">
                     {goals.map((goal) => (
-                        <div key={goal.title} className="w-1/2">
+                        <div key={goal.title} className="md:w-1/2">
                             <Image
                                 src={goal.link}
                                 alt="icon"
@@ -32,10 +34,10 @@ function AboutFund() {
                                 width={38}
                             />
                             <div className="pt-4">
-                                <div className="text-[22px] leading-normal">
+                                <div className="md:text-[36px] font-normal leading-normal">
                                     {goal.title}
                                 </div>
-                                <div className="text-[16px] leading-normal py-2">
+                                <div className="md:text-[24px] font-normal leading-normal text-justify py-2">
                                     {goal.text}
                                 </div>
                             </div>

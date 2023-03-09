@@ -16,7 +16,7 @@ function Footer() {
     ];
     return (
         <>
-            <div className="flex flex-row justify-center pt-8 text-white px-[300px] h-[600px] bg-no-repeat bg-bottom bg-[#395466] bg-[url('/footer.svg')]">
+            <div className="flex flex-col md:flex-row justify-center pt-8 text-white md:px-[300px] h-[600px] bg-no-repeat bg-bottom bg-[#395466] bg-[url('/footer.svg')]">
                 <div>
                     <div className="text-[32px]">Дети бабочки</div>
                     <div className="pt-4 text-[22px]">

@@ -16,7 +16,7 @@ function Statistics() {
     ];
     return (
         <>
-            <div className="flex flex-row justify-between py-8 text-[#395466]">
+            <div className="flex flex-col md:flex-row justify-between py-8 text-[#395466]">
                 {statistics.map((stat) => (
                     <div
                         className="flex flex-col justify-center items-center"

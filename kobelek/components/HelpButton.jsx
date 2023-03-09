@@ -1,8 +1,6 @@
 import Link from "next/link";
 function HelpButton() {
     const tel = "+77026351323";
-    // const whatsappText = `https://wa.me/${tel}?text=`;
-    // const text = "I'm%20interested%20in%20your%20car%20for%20sale";
     const helpInfo = [
         {
             title: "Оказать помощь детям бабочкам",
@@ -32,18 +30,20 @@ function HelpButton() {
 
     return (
         <>
-            <div className="flex flex-row gap-10 justify-between bg-[#46bd85] rounded-[30px] my-[80px] p-[80px] text-white">
+            <div className="flex flex-col md:flex-row gap-10 justify-between bg-[#46bd85] rounded-[30px] my-[80px] p-[80px] text-white">
                 {helpInfo.map((info) => (
                     <div
-                        className="relative flex flex-col w-1/3"
+                        className="flex flex-col justify-between w-[220px]"
                         key={info.title}
                     >
                         <div className="h-[100px] text-[30px] leading-none">
                             {info.title}
                         </div>
-                        <div className="text-sm">{info.text}</div>
+                        <div className="text-[16px] text-justify">
+                            {info.text}
+                        </div>
                         <div className="h-[100px]"></div>
-                        <button className="absolute bottom-0 text-sm text-black bg-white gap-4 rounded-full p-4">
+                        <button className="text-sm text-black bg-white gap-4 rounded-full p-4">
                             <Link
                                 href={`https://wa.me/${tel}?text=${info.whatsapp}`}
                             >
