@@ -32,12 +32,12 @@ function Header() {
                     ))}
                 </div>
             </div>
-            <div className="flex flex-row  justify-between lg:hidden">
+            <div className="flex flex-row pt-4 pb-6 justify-between lg:hidden">
                 <Image src={logo} alt="logo" height={32} width={50} />
                 <IconButton
                     aria-label="Open Menu"
-                    size="md"
-                    mr={1}
+                    size="lg"
+                    mr={2}
                     icon={<HamburgerIcon />}
                     onClick={toggle}
                 />
@@ -51,7 +51,7 @@ function Header() {
                         mt={2}
                         mr={2}
                         aria-label="Close Menu"
-                        size="md"
+                        size="lg"
                         icon={<CloseIcon />}
                         className="self-end"
                         onClick={toggle}

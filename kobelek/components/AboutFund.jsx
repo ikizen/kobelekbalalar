@@ -16,7 +16,7 @@ function AboutFund() {
     return (
         <>
             <div className="md:py-[50px]">
-                <div className="lg:text-[64px] font-bold pb-2">
+                <div className="text-[32px] lg:text-[64px] font-bold pb-2">
                     О фонде Kóbelek balalar
                 </div>
                 <div className="lg:text-[36px] font-normal lg:pr-[280px]">

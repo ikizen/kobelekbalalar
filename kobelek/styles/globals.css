@@ -11,7 +11,7 @@
 
 @layer components {
     .btn-nav {
-        @apply flex justify-center items-center text-[20px] mx-4 my-2  rounded-md;
+        @apply flex justify-center items-center text-[26px] lg:text-[20px] mx-4 my-2  rounded-md;
     }
     .btn {
         @apply py-[1rem] px-[2rem];

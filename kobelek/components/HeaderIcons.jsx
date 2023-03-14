@@ -20,11 +20,11 @@ const icons = [
 function HeaderIcons() {
     return (
         <>
-            <div className="md:py-8">
-                <div className="flex md:flex-row flex-col justify-between">
+            <div className="py-8">
+                <div className="flex md:flex-row flex-col  lg:justify-between">
                     {icons.map((icon) => (
                         <div
-                            className="flex flex-row items-end"
+                            className="flex flex-row justify-around pb-8 lg:pb-0 lg:items-end"
                             key={icon.name}
                         >
                             <Image
