@@ -16,17 +16,20 @@ function AboutFund() {
     return (
         <>
             <div className="md:py-[50px]">
-                <div className="text-[32px] lg:text-[64px] font-bold pb-2">
+                <div className="text-[32px] md:text-[50px] lg:text-[64px] font-bold md:font-normal pb-2">
                     О фонде Kóbelek balalar
                 </div>
-                <div className="lg:text-[36px] font-normal lg:pr-[280px]">
+                <div className="text-justify lg:text-left lg:text-[36px] font-normal lg:pr-[280px]">
                     Помощь детям с редким генетическим заболеванием мы начали 3
                     августа 2017 года при поддержке «Казахстанской Ассоциации
                     дерматовенерологов, дерматокосметологов».
                 </div>
-                <div className="flex flex-col md:flex-row pt-14 gap-[100px]">
+                <div className="flex flex-col gap-[50px] sm:gap-[80px] md:flex-row pt-14 lg:gap-[100px]">
                     {goals.map((goal) => (
-                        <div key={goal.title} className="md:w-1/2">
+                        <div
+                            key={goal.title}
+                            className="flex flex-col items-center md:items-start md:w-1/2"
+                        >
                             <Image
                                 src={goal.link}
                                 alt="icon"
@@ -34,7 +37,7 @@ function AboutFund() {
                                 width={38}
                             />
                             <div className="pt-4">
-                                <div className="md:text-[36px] font-normal leading-normal">
+                                <div className="text-[30px] text-center md:text-left font-medium md:text-[36px] leading-normal">
                                     {goal.title}
                                 </div>
                                 <div className="md:text-[24px] font-normal leading-normal text-justify py-2">

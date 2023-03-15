@@ -3,6 +3,13 @@ import { Card, CardHeader, CardBody, CardFooter, Flex } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
 
+const breakpoints = {
+    sm: "640px",
+    md: "768px",
+    lg: "1024px",
+    xl: "1280px",
+};
+
 function Children() {
     const children = [
         {
@@ -38,16 +45,18 @@ function Children() {
     ];
     return (
         <div className="pb-[100px]">
-            <div className="text-[50px]">Наши дети-бабочки</div>
-            <div className="flex flex-wrap justify-between gap-[40px] pt-6">
+            <div className="text-[32px] text-center md:text-left font-bold md:font-normal md:text-[50px]">
+                Наши дети-бабочки
+            </div>
+            <div className="flex flex-wrap justify-between gap-6 lg:gap-[40px] pt-6">
                 {children.map((child) => (
                     <Card
-                        // boxShadow="dark-lg"
                         key={child.name}
-                        width="370px"
+                        width={["fit-content", 320, 370]}
                         height="540px"
                         rounded="30px"
                         background="#e89361"
+                        className="w-fit"
                     >
                         <CardBody>
                             <Flex
@@ -71,20 +80,6 @@ function Children() {
                             </Flex>
                         </CardBody>
                     </Card>
-                    // <div
-                    //     key={child.name}
-                    //     className="flex flex-col w-[360px] h-[520px] bg-white p-4 drop-shadow-child rounded-[30px]"
-                    // >
-                    //     <Image
-                    //         src={child.img}
-                    //         alt={child.name}
-                    //         width={250}
-                    //         height={165}
-                    //         className="flex self-center pt-2 rounded-[30px]"
-                    //     />
-                    //     <div className="pt-4 text-[22px]">{child.name}</div>
-                    //     <div className="pt-2 text-[16px]">{child.text}</div>
-                    // </div>
                 ))}
             </div>
         </div>

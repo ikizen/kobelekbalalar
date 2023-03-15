@@ -16,7 +16,7 @@ function Statistics() {
     ];
     return (
         <>
-            <div className="flex flex-col md:flex-row justify-between py-8 text-[#395466]">
+            <div className="flex flex-col gap-10 md:gap-6 md:flex-row justify-between py-8 text-[#395466]">
                 {statistics.map((stat) => (
                     <div
                         className="flex flex-col justify-center items-center"
@@ -25,7 +25,9 @@ function Statistics() {
                         <div className="text-[50px] font-bold">
                             {stat.number}
                         </div>
-                        <div className="text-[22px]">{stat.text}</div>
+                        <div className="text-center lg:text-left text-[22px]">
+                            {stat.text}
+                        </div>
                     </div>
                 ))}
             </div>

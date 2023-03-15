@@ -1,14 +1,22 @@
 import Link from "next/link";
+
+function bin() {
+    return (
+        <>
+            БИН: 170840001911$
+            <br />
+            ИИК: KZ3396503F0008876643 <br /> в Филиале АО «Forte Bank».
+            г.Нур-Султан <br /> БИК: IRTYKZKA <br /> БИН: 990740000684
+        </>
+    );
+}
+
 function HelpButton() {
     const tel = "+77026351323";
     const helpInfo = [
         {
             title: "Оказать помощь детям бабочкам",
-            text: `БИН: 170840001911
-                        ИИК: KZ3396503F0008876643
-                        в Филиале АО «Forte Bank». г.Нур-Султан
-                        БИК: IRTYKZKA
-                        БИН: 990740000684`,
+            text: bin(),
             button: "Связаться",
             whatsapp:
                 "Здравствуйте,%20Я%20бы%20хотел%20помочь%20детям%20бабочкам🤗",
@@ -22,7 +30,7 @@ function HelpButton() {
         },
         {
             title: "Хочу стать волонтером",
-            text: "Ищем добровольцев, которым небезразлично здоровье детей,готовых вместе с нами помочь им.",
+            text: "Ищем добровольцев, которым небезразлично здоровье детей, готовых вместе с нами помочь им.",
             button: "Я волонтер",
             whatsapp: "Здравствуйте,%20я%20хочу%20стать%20вашим%20волонтером",
         },
@@ -30,19 +38,19 @@ function HelpButton() {
 
     return (
         <>
-            <div className="flex flex-col md:flex-row gap-10 justify-between bg-[#46bd85] rounded-[30px] my-[80px] p-[80px] text-white">
+            <div className="flex flex-col md:flex-row gap-10 justify-between bg-[#46bd85] rounded-[30px] my-[80px] py-[80px] px-[40px] lg:p-[80px] text-white">
                 {helpInfo.map((info) => (
                     <div
-                        className="flex flex-col justify-between w-[220px]"
+                        className="flex flex-col text-center justify-between lg:w-[220px]"
                         key={info.title}
                     >
-                        <div className="h-[100px] text-[30px] leading-none">
+                        <div className="h-[80px] md:h-[100px] text-[30px] md:text-[24px] lg:text-[30px] leading-none">
                             {info.title}
                         </div>
-                        <div className="text-[16px] text-justify">
+                        <div className="text-[20px] md:text-[16px] text-justify">
                             {info.text}
                         </div>
-                        <div className="h-[100px]"></div>
+                        <div className="h-[50px] md:h-[100px]"></div>
                         <button className="text-sm text-black bg-white gap-4 rounded-full p-4">
                             <Link
                                 href={`https://wa.me/${tel}?text=${info.whatsapp}`}
