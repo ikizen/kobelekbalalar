@@ -28,10 +28,10 @@
         "**/*.ts",
         "**/*.tsx",
         "components/Children.jsx",
-        "components/Header.jsx",
+        "components/Header/Header.jsx",
         "components/HelpButton.jsx",
-        "components/HeaderIcons.jsx",
-        "components/AboutFund.jsx"
+        "components/Header/HeaderIcons.jsx",
+        "components/Fund/AboutFund.jsx"
     ],
     "exclude": ["node_modules"]
 }

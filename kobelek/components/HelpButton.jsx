@@ -38,20 +38,22 @@ function HelpButton() {
 
     return (
         <>
-            <div className="flex flex-col md:flex-row gap-10 justify-between bg-[#46bd85] rounded-[30px] my-[80px] py-[80px] px-[40px] lg:p-[80px] text-white">
+            <div className="flex flex-col md:flex-row gap-10 md:gap-6 justify-between bg-[#46bd85] rounded-[30px] my-[80px] py-[80px] px-[40px] lg:p-[80px] text-white">
                 {helpInfo.map((info) => (
                     <div
-                        className="flex flex-col text-center justify-between lg:w-[220px]"
+                        className="flex flex-col text-center justify-between md:w-[220px] lg:w-[240px]"
                         key={info.title}
                     >
-                        <div className="h-[80px] md:h-[100px] text-[30px] md:text-[24px] lg:text-[30px] leading-none">
-                            {info.title}
+                        {" "}
+                        <div className="pb-6 md:pb-10">
+                            <div className="h-[80px] md:h-[100px] text-[30px] md:text-[24px] lg:text-[30px] leading-none">
+                                {info.title}
+                            </div>
+                            <div className="text-[20px] md:text-[16px] xl:text-[20px] text-justify">
+                                {info.text}
+                            </div>
                         </div>
-                        <div className="text-[20px] md:text-[16px] text-justify">
-                            {info.text}
-                        </div>
-                        <div className="h-[50px] md:h-[100px]"></div>
-                        <button className="text-sm text-black bg-white gap-4 rounded-full p-4">
+                        <button className="text-sm text-black bg-white gap-4 rounded-full p-4 hover:text-white hover:bg-[#e89761] ">
                             <Link
                                 href={`https://wa.me/${tel}?text=${info.whatsapp}`}
                             >

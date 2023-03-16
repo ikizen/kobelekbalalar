@@ -1,12 +1,12 @@
 import Head from "next/head";
-import Header from "../components/Header";
-import HeaderIcons from "@/components/HeaderIcons";
-import AboutFund from "@/components/AboutFund";
+import Header from "../components/Header/Header";
+import HeaderIcons from "@/components/Header/HeaderIcons";
+import AboutFund from "@/components/Fund/AboutFund";
 import HelpButton from "@/components/HelpButton";
 import Children from "@/components/Children";
 import Footer from "../components/Footer";
 import Statistics from "../components/Statistics";
-import HeaderCard from "../components/HeaderCard";
+import HeaderCard from "../components/Header/HeaderCard";
 
 export default function Home() {
     return (

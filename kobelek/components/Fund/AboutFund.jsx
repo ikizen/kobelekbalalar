@@ -19,7 +19,7 @@ function AboutFund() {
                 <div className="text-[32px] md:text-[50px] lg:text-[64px] font-bold md:font-normal pb-2">
                     О фонде Kóbelek balalar
                 </div>
-                <div className="text-justify lg:text-left lg:text-[36px] font-normal lg:pr-[280px]">
+                <div className="text-justify lg:text-left lg:text-[36px] font-normal lg:pr-[80px]">
                     Помощь детям с редким генетическим заболеванием мы начали 3
                     августа 2017 года при поддержке «Казахстанской Ассоциации
                     дерматовенерологов, дерматокосметологов».
@@ -40,7 +40,7 @@ function AboutFund() {
                                 <div className="text-[30px] text-center md:text-left font-medium md:text-[36px] leading-normal">
                                     {goal.title}
                                 </div>
-                                <div className="md:text-[24px] font-normal leading-normal text-justify py-2">
+                                <div className="md:text-[24px] font-normal leading-normal text-left py-2">
                                     {goal.text}
                                 </div>
                             </div>

@@ -4,7 +4,10 @@ import Link from "next/link";
 
 function Footer() {
     const socialIcons = [
-        { name: "./youtube.svg", link: "" },
+        {
+            name: "./youtube.svg",
+            link: "https://www.youtube.com/channel/UCddNkk07n457IE2E2bsRdcw",
+        },
         {
             name: "./instagram.svg",
             link: "https://www.instagram.com/kobelekbalalar/",
