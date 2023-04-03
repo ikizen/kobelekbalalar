@@ -19,6 +19,9 @@
     .main {
         @apply mx-10;
     }
+    .h1 {
+        @apply text-[36px] leading-[44px]  font-semibold lg:text-[50px] lg:leading-[56px] lg:font-normal;
+    }
 }
 
 body {

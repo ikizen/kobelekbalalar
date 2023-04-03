@@ -22,17 +22,17 @@ const info = [
 function GetInfo() {
     return (
         <>
-            <div className="flex flex-col items-center my-8 lg:my-[60px] py-[60px] lg:p-[80px] bg-[#46bd85] rounded-[30px] text-white">
+            <div className="flex flex-col items-center px-2 my-8 md:px-[140px] lg:my-[60px] py-[60px] lg:p-[80px] bg-[#46bd85] rounded-[30px] text-white">
                 <h1 className="pb-4 lg:pb-0 text-[28px] font-bold lg:font-normal lg:text-[50px] ">
                     Подробная информация
                 </h1>
-                <div className="flex flex-col lg:flex-row lg:gap-8">
+                <div className="flex flex-col md:gap-4 lg:gap-4 lg:flex-row xl:gap-8">
                     {info.map((info) => (
                         <div
                             key={info.title}
-                            className="flex flex-col justify-between w-[350px]"
+                            className="flex flex-col justify-between "
                         >
-                            <h1 className="pb-4 pt-4 text-[24px] text-center lg:text-center ">
+                            <h1 className="flex content-start pb-4 pt-4 text-[24px] text-center lg:text-center ">
                                 {info.title}
                             </h1>
                             <div className="pb-4 text-[16px] ">{info.text}</div>
