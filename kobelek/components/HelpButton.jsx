@@ -12,7 +12,7 @@ function bin() {
 }
 
 function HelpButton() {
-    const tel = "+77026351323";
+    const tel = "+77475852514";
     const helpInfo = [
         {
             title: "Оказать помощь детям бабочкам",
