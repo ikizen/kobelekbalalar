@@ -17,7 +17,7 @@ function AboutFund() {
         <>
             <div className="md:py-[50px]">
                 <div className="text-[32px] md:text-[50px] lg:text-[64px] font-bold md:font-normal pb-2">
-                    О фонде Kóbelek balalar
+                    О фонде Kóbelek Balalar
                 </div>
                 <div className="text-justify lg:text-left lg:text-[36px] font-normal lg:pr-[80px]">
                     Помощь детям с редким генетическим заболеванием мы начали 3

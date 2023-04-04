@@ -7,7 +7,7 @@ function HeaderCard() {
                     заболеванием Буллёзный Эпидермолиз.
                 </div>
                 <div className="text-[60px] md:text-[80px] text-center font-bold leading-none">
-                    Дети бабочки
+                    Kobelek Balalar
                 </div>
                 <div className="text-center text-[25px] md:text-[50px] font-light md:leading-[62px] ">
                     Благотворительный фонд
