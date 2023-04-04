@@ -53,7 +53,7 @@ function HelpButton() {
                                 {info.text}
                             </div>
                         </div>
-                        <button className="text-sm text-black bg-white gap-4 rounded-full p-4 hover:text-white hover:bg-[#e89761] ">
+                        <button className="text-sm gap-4 rounded-full p-4 text-white bg-[#e89761] ">
                             <Link
                                 href={`https://wa.me/${tel}?text=${info.whatsapp}`}
                             >

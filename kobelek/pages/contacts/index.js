@@ -14,7 +14,7 @@ function Contacts() {
                     Богенбай батыра 3\3, КВ ОФИС КАБ. 38
                 </div>
                 <br />
-                <button className="p-4 w-[260px] rounded-full text-black bg-[#e89761] hover:text-white ">
+                <button className="p-4 w-[260px] rounded-full bg-[#e89761] text-white ">
                     <Link href="https://go.2gis.com/t1mm4e">Открыть карту</Link>
                 </button>
                 <br />
@@ -23,7 +23,7 @@ function Contacts() {
                     Так же вы можете связаться с нашим менеджером по телефону:
                 </div>
                 <br />
-                <button className="w-[260px] text-sm text-black gap-4 rounded-full p-4 bg-[#e89761] ">
+                <button className="w-[260px] text-sm text-white gap-4 rounded-full p-4 bg-[#e89761] ">
                     <Link href="tel:+77475852514">Позвонить</Link>
                 </button>
             </div>
