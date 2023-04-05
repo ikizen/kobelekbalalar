@@ -7,6 +7,7 @@ import Children from "@/components/Children";
 import Footer from "../components/Footer";
 import Statistics from "../components/Statistics";
 import HeaderCard from "../components/Header/HeaderCard";
+import Kaspi from "../components/Kaspi";
 
 export default function Home() {
     return (
@@ -30,6 +31,7 @@ export default function Home() {
                     <HeaderIcons />
                 </header>
                 <AboutFund />
+                <Kaspi />
                 <Statistics />
                 <HelpButton />
                 <Children />
