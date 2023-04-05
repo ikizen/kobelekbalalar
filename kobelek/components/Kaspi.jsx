@@ -6,6 +6,7 @@ import kaspi from "/public/kaspi.png";
 function Kaspi() {
     return (
         <>
+            <br />
             <div className="bg-[#46bd85] rounded-[30px] py-[80px] px-[40px] lg:p-[80px] text-white flex flex-col justify-center items-center">
                 <div className="h1 text-white">
                     Вы можете оплатить через каспи
@@ -31,6 +32,7 @@ function Kaspi() {
                     </Link>
                 </button>
             </div>
+            <br />
         </>
     );
 }
