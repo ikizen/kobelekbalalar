@@ -22,7 +22,7 @@ function Footer() {
             <div className="flex flex-col md:gap-6 lg:gap-10 xl:gap-10 md:flex-row justify-center pt-10 pb-40 text-white px-[15px] md:px-[30px] lg:px-[100px] xl:px-[250px] lg:h-[650px] bg-[length:1560px_300px] md:bg-auto bg-no-repeat bg-left-bottom bg-[#395466] bg-[url('/footer.svg')]">
                 <div>
                     <div className="text-center md:text-start text-[32px]">
-                        Дети бабочки
+                        Kobelek Balalar
                     </div>
                     <div className=" first-letter:pt-4 text-[20px] md:text-[22px]">
                         Первый в Казахстане Фонд помощи детям с редким
@@ -53,10 +53,7 @@ function Footer() {
                     <div className="pt-4 text-[20px] md:text-[22px]">
                         БИН: 170840001911 <br /> ИИК: KZ3396503F0008876643
                         <br /> в Филиале АО «Forte Bank». г. Астана <br />
-                        БИК: IRTYKZKA <br /> БИН: 990740000684 Kaspi gold:
-                        5169497129327668
-                        <br />
-                        Kaspi tel: 8-701-55-88-934
+                        БИК: IRTYKZKA <br /> БИН: 990740000684
                     </div>
                 </div>
                 <div>
