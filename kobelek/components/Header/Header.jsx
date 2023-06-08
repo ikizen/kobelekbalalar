@@ -39,42 +39,44 @@ function Header() {
           ))}
         </div>
       </div>
-      <Disclosure>
-        {({ open }) => (
-          <>
-            <div className="flex flex-row justify-between py-4">
-              <Image src={logo} alt="logo" height={32} width={50} />
-              <Disclosure.Button className="p-2">
-                <Bars3Icon
-                  className={
-                    open
-                      ? 'rotate-90 duration-300 transform h-9 w-9 text-gray-900'
-                      : 'duration-300  h-9 w-9 text-gray-900'
-                  }
-                />
-              </Disclosure.Button>
-            </div>
-            <Transition
-              enter="transition duration-200 ease-out"
-              enterFrom="transform scale-95 opacity-0"
-              enterTo="transform scale-100 opacity-100"
-              leave="transition duration-75 ease-out"
-              leaveFrom="transform scale-100 opacity-100"
-              leaveTo="transform scale-95 opacity-0"
-            >
-              <Disclosure.Panel className="text-gray-500 pb-4 ">
-                <div className="flex flex-col text-black">
-                  {navbars.map((nav) => (
-                    <button className="btn-nav" key={nav.name}>
-                      <Link href={nav.link}>{nav.name}</Link>
-                    </button>
-                  ))}
-                </div>
-              </Disclosure.Panel>
-            </Transition>
-          </>
-        )}
-      </Disclosure>
+      <div className="lg:hidden">
+        <Disclosure>
+          {({ open }) => (
+            <>
+              <div className="flex flex-row justify-between py-4">
+                <Image src={logo} alt="logo" height={32} width={50} />
+                <Disclosure.Button className="p-2">
+                  <Bars3Icon
+                    className={
+                      open
+                        ? 'rotate-90 duration-300 transform h-9 w-9 text-gray-900'
+                        : 'duration-300  h-9 w-9 text-gray-900'
+                    }
+                  />
+                </Disclosure.Button>
+              </div>
+              <Transition
+                enter="transition duration-200 ease-out"
+                enterFrom="transform scale-95 opacity-0"
+                enterTo="transform scale-100 opacity-100"
+                leave="transition duration-75 ease-out"
+                leaveFrom="transform scale-100 opacity-100"
+                leaveTo="transform scale-95 opacity-0"
+              >
+                <Disclosure.Panel className="text-gray-500 pb-4 ">
+                  <div className="flex flex-col text-black">
+                    {navbars.map((nav) => (
+                      <button className="btn-nav" key={nav.name}>
+                        <Link href={nav.link}>{nav.name}</Link>
+                      </button>
+                    ))}
+                  </div>
+                </Disclosure.Panel>
+              </Transition>
+            </>
+          )}
+        </Disclosure>
+      </div>
     </>
   );
 }
