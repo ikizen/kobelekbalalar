@@ -1,89 +1,86 @@
 // import Image from "next/image";
-import { Card, CardHeader, CardBody, CardFooter, Flex } from "@chakra-ui/react";
-import { Text } from "@chakra-ui/react";
-import { Image } from "@chakra-ui/react";
+import { Card, CardHeader, CardBody, CardFooter, Flex } from '@chakra-ui/react';
+import { Text } from '@chakra-ui/react';
+import { Image } from '@chakra-ui/react';
 
 const breakpoints = {
-    sm: "640px",
-    md: "768px",
-    lg: "1024px",
-    xl: "1280px",
+  sm: '640px',
+  md: '768px',
+  lg: '1024px',
+  xl: '1280px',
 };
 
 function Children() {
-    const children = [
-        {
-            name: "Кан Полина",
-            text: "Здравствуйте уважаемые работники фонда. Я мама Кан Полины Евгеньевны из г Тараза, обращаюсь к Вам с криком о помощи.",
-            img: "/img/children/child1.png",
-        },
-        {
-            name: "Кудинова Ангелина",
-            text: "Здравствуйте. Пишет Вам Юркова Александра Витальевна (22.09.1984), проживающая в городе Павлодар.",
-            img: "/img/children/child2.png",
-        },
-        {
-            name: "Александра Игнатенко",
-            text: "Меня зовут Евгения Игнатенко. Я мама девочки-бабочки Игнатенко Александры. Наша доченька родилась 1 сентября 2012 года.",
-            img: "/img/children/child3.png",
-        },
-        {
-            name: "Сидиров Тимур",
-            text: "Здравствуйте ,я мама Сидирова Тимура 07.02.2014 года. .Беременность проходила хорошо, когда я родила он крикнул сразу, с весом 3,400кг.",
-            img: "/img/children/child4.png",
-        },
-        {
-            name: "Понеполяк Михаил",
-            text: "Здравствуйте! Меня зовут Мари­йя. Я мама ребенка ­с врождённым Рецессивн­о Дистрофическим булл­ёзным эпидермолизом.",
-            img: "/img/children/child5.png",
-        },
-        {
-            name: "Райкова Ольга",
-            text: "Здравствуйте! Меня зовут Райкова Олеся. У меня есть дочь Райкова Ольга. Живём мы г.Семей, Восточно-Казахстанской области. Дочь родилась 5 сентября 2008 года. Это первый и единственный мой ребёнок.",
-            img: "/img/children/child6.png",
-        },
-    ];
-    return (
-        <div className="pb-[100px]">
-            <div className="text-[32px] text-center md:text-left font-bold md:font-normal md:text-[50px]">
-                Наши дети-бабочки
-            </div>
-            <div className="flex flex-wrap justify-between gap-6 lg:gap-[40px] pt-6">
-                {children.map((child) => (
-                    <Card
-                        key={child.name}
-                        width={["fit-content", 320, 370]}
-                        height="540px"
-                        rounded="30px"
-                        background="#e89361"
-                        className="w-fit"
-                    >
-                        <CardBody>
-                            <Flex
-                                justify="center"
-                                direction="column"
-                                align="center"
-                            >
-                                <Image
-                                    src={child.img}
-                                    alt={child.name}
-                                    rounded="full"
-                                    width="220px"
-                                    height="220px"
-                                />
-                                <Text className="pt-4 text-[28px] font-bold text-white">
-                                    {child.name}
-                                </Text>
-                                <Text className="py-4 text-[18px] text-center text-white">
-                                    {child.text}
-                                </Text>
-                            </Flex>
-                        </CardBody>
-                    </Card>
-                ))}
-            </div>
-        </div>
-    );
+  const children = [
+    {
+      name: 'Кан Полина',
+      text: 'Здравствуйте! Меня зовут Кан Полина.',
+      img: '/img/children/child1.JPG',
+    },
+    {
+      name: 'Кан Татьяна',
+      text: 'Здравствуйте! Меня зовут Кан Татьяна.',
+      img: '/img/children/child2.JPG',
+    },
+    {
+      name: 'Нурмуканова Танзиля',
+      text: 'Здравствуйте! Меня зовут  Нурмуканова Танзиля.',
+      img: '/img/children/child3.JPG',
+    },
+    {
+      name: 'Жарылкосынова Нурзере',
+      text: 'Здравствуйте! Меня зовут Жарылкосынова Нурзере.',
+      img: '/img/children/child4.JPG',
+    },
+    {
+      name: 'Анапия Манзура',
+      text: 'Здравствуйте! Меня зовут Анапия Манзура.',
+      img: '/img/children/child5.JPG',
+    },
+    {
+      name: 'Игнатенко Александра ',
+      text: 'Здравствуйте! Меня зовут Игнатенко Александра.',
+      img: '/img/children/child6.JPG',
+    },
+  ];
+  return (
+    <div className="pb-[100px]">
+      <div className="text-[32px] text-center md:text-left font-bold md:font-normal md:text-[50px]">
+        Наши дети-бабочки
+      </div>
+      <div className="flex flex-col md:flex-row md:flex-wrap gap-4 lg:gap-[40px] pt-6">
+        {children.map((child) => (
+          <Card
+            key={child.name}
+            width={['auto', 300, 300]}
+            height="380px"
+            rounded="30px"
+            background="#e89361"
+            className="w-auto"
+          >
+            <CardBody>
+              <Flex justify="center" direction="column" align="center">
+                <Image
+                  src={child.img}
+                  alt={child.name}
+                  rounded="full"
+                  width="200px"
+                  height="200px"
+                  className="mt-[20px] shadow"
+                />
+                <Text className="pt-4 text-center text-[28px] font-bold text-white">
+                  {child.name}
+                </Text>
+                {/* <Text className="py-4 text-[18px] text-center text-white">
+                  {child.text}
+                </Text> */}
+              </Flex>
+            </CardBody>
+          </Card>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default Children;
